@@ -14,20 +14,22 @@ function Navbar() {
   return (
     <>
       <Upnav />
-      <div className="">
-        <div className="container p-4 flex justify-between">
-          <div className="flex items-center  justify-center gap-10">
-            <div className="">
-              <a href="/">
-              <img src={Logo} alt="" className="cursor-pointer w-full h-[60px] -mt-2" />
-              </a>
-            </div>
+      <div className="bg-[#E1E3E5]">
+        <div className=" p-4 flex justify-between">
+          <a href="/">
+            <img
+              src={Logo}
+              alt=""
+              className="cursor-pointer w-full h-[60px] "
+            />
+          </a>
 
-            <div className="lg:block hidden lg:ml-12 ml-8">
-              <div className="home-center gap-2">
+          <div className="flex items-center  justify-center gap-3">
+            <div className="md:block hidden">
+              <div className="home-center gap-6">
                 <a
                   href="/"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/" ? (
                     <div className="text-[#FF7518]">Home</div>
@@ -38,7 +40,7 @@ function Navbar() {
 
                 <a
                   href="/service"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/service" ? (
                     <div className="text-[#FF7518]">Service</div>
@@ -49,7 +51,7 @@ function Navbar() {
 
                 <a
                   href="/about"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/about" ? (
                     <div className="text-[#FF7518]">About us</div>
@@ -60,7 +62,7 @@ function Navbar() {
 
                 <a
                   href="/payment"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/payment" ? (
                     <div className="text-[#FF7518]">Payment</div>
@@ -71,7 +73,7 @@ function Navbar() {
 
                 <a
                   href="/testimonials"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className=" media fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/testimonials" ? (
                     <div className="text-[#FF7518]">Testimonials</div>
@@ -82,7 +84,7 @@ function Navbar() {
 
                 <a
                   href="/sample"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="media fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/sample" ? (
                     <div className="text-[#FF7518]">Samples</div>
@@ -93,7 +95,7 @@ function Navbar() {
 
                 <a
                   href="/estimation"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="media fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/estimation" ? (
                     <div className="text-[#FF7518]">Estimation fee</div>
@@ -104,7 +106,7 @@ function Navbar() {
 
                 <a
                   href="/contact"
-                  className="text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
+                  className="fonty text-black font-inter text-[15px] font-bold  hover:text-[#FF7518] cursor-pointer"
                 >
                   {pathname === "/contact" ? (
                     <div className="text-[#FF7518]">Contact us</div>
@@ -114,30 +116,30 @@ function Navbar() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="flex justify-end bg-yellow-400 ">
-            <button className="mt-[6px]  w-[149px] h-[42px] bg-[#FF7518] md:block hidden font-inter text-[16px] text-white rounded-[15px]">
-              Get Estimate
-            </button>
+            <div className="btny">
+              <button className=" mt-[2px]  w-[149px] h-[42px] bg-[#FF7518] md:block hidden font-inter text-[16px] text-white rounded-[15px]">
+                Get Estimate
+              </button>
 
-            <div className="visible md:invisible col-span-6 flex justify-end">
-          <svg
-            onClick={() => setOpen(true)}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6 self-center text-[#FF7518]"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </div>
-        <Example open={open} setOpen={handleOnClose} />
+              <div className="visible md:invisible flex justify-end">
+                <svg
+                  onClick={() => setOpen(true)}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 self-center text-[#FF7518]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
+              <Example open={open} setOpen={handleOnClose} />
+            </div>
           </div>
         </div>
       </div>

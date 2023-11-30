@@ -13,8 +13,8 @@ function Background() {
               </button>
             </div>
             <div className="flex justify-center mt-4">
-              <img src={Blue} alt="" />
-              <img src={Drive} alt="" />
+              <img src={Blue} alt="" className="cursor-pointer"/>
+              <img src={Drive} alt="" className="cursor-pointer"/>
             </div>
           </div>
           <div className="col-span-6 lg:block hidden mt-24">

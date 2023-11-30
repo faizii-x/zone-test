@@ -2,23 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.home-center{
-    display: flex;
+.home-center {
+  display: flex;
 }
 
 .background-image {
-    width: 100%;
-    height: 320px; 
-    background-image: url('assets/png/bg.jpg');
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 320px;
+  background-image: url("assets/png/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-  }
-  
-  .content {
-    color: white;
-  }
-  
+.content {
+  color: white;
+}
+.btny {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-   
+@media (max-width: 1280px) {
+  .fonty {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1020px) {
+  .media {
+    display: none;
+  }
+}

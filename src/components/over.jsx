@@ -9,8 +9,10 @@ function Over() {
           technology, and an unwavering commitment to improving construction
           estimating, scheduling, and cost management procedures to conserve
           your resources and time. We can assist you with an expert if you need
-          one. <span className="text-[#FF7518] font-bold cursor-pointer">Reach us at +1 917 720 3892.</span>
-          
+          one.{" "}
+          <span className="text-[#FF7518] font-bold cursor-pointer">
+            Reach us at +1 917 720 3892.
+          </span>
         </p>
       </div>
     </>

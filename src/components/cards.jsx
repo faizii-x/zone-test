@@ -26,7 +26,7 @@ function Cards() {
           </div>
         </div>
       </div>
-      {/* ................................. */}
+    
       <div className="grid grid-cols-1 w-[85%] lg:w-[40%] lg:mt-20 mt-8 container mx-auto">
         <div className="bg-[#FF7518] rounded-md pl-6 pr-6">
           <div className="bg-[#2F2F2F] text-white">
